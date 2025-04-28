@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+    <title>Conversor de Moedas | Taxa de Câmbio </title>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <main>
+            <h1>Conversor de Moedas</h1>
+            <label>
+                Converter <b>de</b>
+                <select>
+                    <option>R$ Real Brasileiro</option>
+                </select>
+            </label>
+
+            <label>
+                Converter <b>para</b>
+                <select class="currency-select">
+                    <option value="dolar">U$ Dólar Americano</option>
+                    <option value="euro">€ Euro</option>
+                    <option value="britanica">£ GBP</option>
+                </select>
+            </label>
+
+
+            <label for="">
+                Valor
+                <input type="text" class="inputValores" placeholder="R$10.000,00" pattern="^[0-9]+([.,][0-9]+)?$">
+            </label>
+
+
+
+            <section>
+                <div class="currency-box">
+                    <img src="./assets/brasil 2-1.png" alt="logo-brasil">
+                    <p class="currency">Real</p>
+                    <p class="valor-real">R$ 0,00</p>
+                </div>
+
+                <a href="#">
+                    <img class="arrow-img" src="./assets/troca.png" alt="Clique aqui">
+                </a>
+
+
+
+                <div class="currency-box">
+                    <img src="./assets/usa.png" class="imgDolar" alt="logo-usa">
+                    <p class="currency" id="nameDolar">Dólar</p>
+                    <p class="valor-dolar">U$ 0.0</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

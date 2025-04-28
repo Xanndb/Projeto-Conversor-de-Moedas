@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/imagem-fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+main {
+    width: 90%;
+    max-width: 375px;
+    height: auto;
+    border-radius: 20px;
+    border: 1px solid #8B8000;
+    margin: 0 auto;
+    padding: 30px 15px 20px;
+}
+
+h1 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 300;
+    color: rgb(223, 223, 223);
+    font-size: 14px;
+}
+
+select,
+input {
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 16px;
+    appearance: none;
+    padding-left: 12px;
+    font-size: 14px;
+}
+
+input {
+    border: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #8B8000;
+    border-radius: 20px;
+    margin-top: 24px;
+    padding: 15px;
+    width: 100%;
+}
+
+.arrow-img {
+    width: 25px;
+    cursor: pointer;
+    margin: 8px;
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.currency {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-align: center;
+}
+
+.valor-real,
+.valor-dolar {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    select,
+    input {
+        height: 36px;
+        margin-bottom: 12px;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+
+    section {
+        margin-top: 18px;
+        padding: 12px;
+        border-radius: 15px;
+    }
+
+    .arrow-img {
+        width: 20px;
+        margin: 6px;
+    }
+
+    .currency {
+        font-size: 14px;
+    }
+
+    .valor-real,
+    .valor-dolar {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    label {
+        font-size: 10px;
+    }
+
+    select,
+    input {
+        height: 32px;
+        margin-bottom: 10px;
+        padding-left: 8px;
+        font-size: 10px;
+    }
+
+    section {
+        margin-top: 12px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .arrow-img {
+        width: 18px;
+        margin: 5px;
+    }
+
+    .currency {
+        font-size: 12px;
+    }
+
+    .valor-real,
+    .valor-dolar {
+        font-size: 9px;
+    }
+}
