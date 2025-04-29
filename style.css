@@ -32,6 +32,7 @@ body::before {
 }
 
 main {
+    backdrop-filter: blur(5px);
     width: 90%;
     max-width: 375px;
     height: auto;
@@ -71,6 +72,8 @@ input {
 }
 
 section {
+  
+    background-color: rgba(0, 0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,6 +123,7 @@ section {
 
     select,
     input {
+
         height: 36px;
         margin-bottom: 12px;
         padding-left: 10px;
